@@ -42,14 +42,14 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">Pharma</a>
+              <a href="index.php" class="js-logo-clone">Pharma</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="shop.html">Store</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li class="active"><a href="shop.php">Store</a></li>
                 <li class="has-children">
                   <a href="#">Dropdown</a>
                   <ul class="dropdown">
@@ -68,14 +68,14 @@
 
                   </ul>
                 </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
               </ul>
             </nav>
           </div>
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-            <a href="cart.html" class="icons-btn d-inline-block bag">
+            <a href="cart.php" class="icons-btn d-inline-block bag">
               <span class="icon-shopping-bag"></span>
               <span class="number">2</span>
             </a>
@@ -90,7 +90,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 mb-0">
-            <a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> 
+            <a href="index.php">Home</a> <span class="mx-2 mb-0">/</span> 
             <strong class="text-black">Cart</strong>
           </div>
         </div>
@@ -219,7 +219,7 @@
     
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location='checkout.html'">Proceed To
+                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location='checkout.php'">Proceed To
                       Checkout</button>
                   </div>
                 </div>

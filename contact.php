@@ -42,14 +42,14 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">Pharma</a>
+              <a href="index.php" class="js-logo-clone">Pharma</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Store</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="shop.php">Store</a></li>
                 <li class="has-children">
                   <a href="#">Dropdown</a>
                   <ul class="dropdown">
@@ -68,14 +68,14 @@
 
                   </ul>
                 </li>
-                <li><a href="about.html">About</a></li>
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="about.php">About</a></li>
+                <li class="active"><a href="contact.php">Contact</a></li>
               </ul>
             </nav>
           </div>
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-            <a href="cart.html" class="icons-btn d-inline-block bag">
+            <a href="cart.php" class="icons-btn d-inline-block bag">
               <span class="icon-shopping-bag"></span>
               <span class="number">2</span>
             </a>
@@ -89,23 +89,96 @@
     <div class="bg-light py-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <strong
-              class="text-black">Thank You</strong></div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <span class="icon-check_circle display-3 text-success"></span>
-            <h2 class="display-3 text-black">Thank you!</h2>
-            <p class="lead mb-5">You order was successfuly completed.</p>
-            <p><a href="shop.html" class="btn btn-md height-auto px-4 py-3 btn-primary">Back to store</a></p>
+          <div class="col-md-12 mb-0">
+            <a href="index.php">Home</a> <span class="mx-2 mb-0">/</span>
+            <strong class="text-black">Contact</strong>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="h3 mb-5 text-black">Get In Touch</h2>
+          </div>
+          <div class="col-md-12">
+    
+            <form action="#" method="post">
+    
+              <div class="p-3 p-lg-5 border">
+                <div class="form-group row">
+                  <div class="col-md-6">
+                    <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_fname" name="c_fname">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_lname" name="c_lname">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="c_email" name="c_email" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_subject" class="text-black">Subject </label>
+                    <input type="text" class="form-control" id="c_subject" name="c_subject">
+                  </div>
+                </div>
+    
+                <div class="form-group row">
+                  <div class="col-md-12">
+                    <label for="c_message" class="text-black">Message </label>
+                    <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-lg-12">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Send Message">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-white mb-4">Offices</h2>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 bg-white mb-3 rounded">
+              <span class="d-block text-black h6 text-uppercase">New York</span>
+              <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 bg-white mb-3 rounded">
+              <span class="d-block text-black h6 text-uppercase">London</span>
+              <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="p-4 bg-white mb-3 rounded">
+              <span class="d-block text-black h6 text-uppercase">Canada</span>
+              <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
 

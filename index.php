@@ -42,14 +42,14 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">Pharma</a>
+              <a href="index.php" class="js-logo-clone">Pharma</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Store</a></li>
+                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="shop.php">Store</a></li>
                 <li class="has-children">
                   <a href="#">Dropdown</a>
                   <ul class="dropdown">
@@ -68,14 +68,14 @@
                     
                   </ul>
                 </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
               </ul>
             </nav>
           </div>
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
-            <a href="cart.html" class="icons-btn d-inline-block bag">
+            <a href="cart.php" class="icons-btn d-inline-block bag">
               <span class="icon-shopping-bag"></span>
               <span class="number">2</span>
             </a>
@@ -154,42 +154,42 @@
         <div class="row">
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <span class="tag">Sale</span>
-            <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Bioderma</a></h3>
+            <a href="shop-single.php"> <img src="images/product_01.png" alt="Image"></a>
+            <h3 class="text-dark"><a href="shop-single.php">Bioderma</a></h3>
             <p class="price"><del>95.00</del> &mdash; $55.00</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Chanca Piedra</a></h3>
+            <a href="shop-single.php"> <img src="images/product_02.png" alt="Image"></a>
+            <h3 class="text-dark"><a href="shop-single.php">Chanca Piedra</a></h3>
             <p class="price">$70.00</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+            <a href="shop-single.php"> <img src="images/product_03.png" alt="Image"></a>
+            <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
             <p class="price">$120.00</p>
           </div>
 
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
 
-            <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Cetyl Pure</a></h3>
+            <a href="shop-single.php"> <img src="images/product_04.png" alt="Image"></a>
+            <h3 class="text-dark"><a href="shop-single.php">Cetyl Pure</a></h3>
             <p class="price"><del>45.00</del> &mdash; $20.00</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.html"> <img src="images/product_05.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">CLA Core</a></h3>
+            <a href="shop-single.php"> <img src="images/product_05.png" alt="Image"></a>
+            <h3 class="text-dark"><a href="shop-single.php">CLA Core</a></h3>
             <p class="price">$38.00</p>
           </div>
           <div class="col-sm-6 col-lg-4 text-center item mb-4">
             <span class="tag">Sale</span>
-            <a href="shop-single.html"> <img src="images/product_06.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.html">Poo Pourri</a></h3>
+            <a href="shop-single.php"> <img src="images/product_06.png" alt="Image"></a>
+            <h3 class="text-dark"><a href="shop-single.php">Poo Pourri</a></h3>
             <p class="price"><del>$89</del> &mdash; $38.00</p>
           </div>
         </div>
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <a href="shop.html" class="btn btn-primary px-4 py-3">View All Products</a>
+            <a href="shop.php" class="btn btn-primary px-4 py-3">View All Products</a>
           </div>
         </div>
       </div>
@@ -208,26 +208,26 @@
             <div class="nonloop-block-3 owl-carousel">
 
               <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <a href="shop-single.php"> <img src="images/product_03.png" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <a href="shop-single.php"> <img src="images/product_01.png" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <a href="shop-single.php"> <img src="images/product_02.png" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 
               <div class="text-center item mb-4">
-                <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
+                <a href="shop-single.php"> <img src="images/product_04.png" alt="Image"></a>
+                <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
                 <p class="price">$120.00</p>
               </div>
 
