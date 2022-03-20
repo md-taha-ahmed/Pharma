@@ -37,7 +37,6 @@
           </form>
         </div>
       </div>
-
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
@@ -65,7 +64,7 @@
                     </li>
                     <li><a href="#">Diet &amp; Nutrition</a></li>
                     <li><a href="#">Tea &amp; Coffee</a></li>
-                    
+
                   </ul>
                 </li>
                 <li><a href="about.php">About</a></li>
@@ -79,8 +78,7 @@
               <span class="icon-shopping-bag"></span>
               <span class="number">2</span>
             </a>
-            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
-                class="icon-menu"></span></a>
+            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
           </div>
         </div>
       </div>
@@ -195,7 +193,7 @@
       </div>
     </div>
 
-    
+
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
@@ -247,7 +245,7 @@
         <div class="row">
           <div class="col-md-12 block-3 products-wrap">
             <div class="nonloop-block-3 no-direction owl-carousel">
-        
+
               <div class="testimony">
                 <blockquote>
                   <img src="images/person_1.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
@@ -256,7 +254,7 @@
 
                 <p>&mdash; Kelly Holmes</p>
               </div>
-        
+
               <div class="testimony">
                 <blockquote>
                   <img src="images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
@@ -264,10 +262,10 @@
                     obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
                     unde.&rdquo;</p>
                 </blockquote>
-              
+
                 <p>&mdash; Rebecca Morando</p>
               </div>
-        
+
               <div class="testimony">
                 <blockquote>
                   <img src="images/person_3.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
@@ -275,10 +273,10 @@
                     obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
                     unde.&rdquo;</p>
                 </blockquote>
-              
+
                 <p>&mdash; Lucas Gallone</p>
               </div>
-        
+
               <div class="testimony">
                 <blockquote>
                   <img src="images/person_4.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
@@ -286,10 +284,10 @@
                     obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
                     unde.&rdquo;</p>
                 </blockquote>
-              
+
                 <p>&mdash; Andrew Neel</p>
               </div>
-        
+
             </div>
           </div>
         </div>
@@ -362,9 +360,10 @@
             <p>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
-              with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"
-                class="text-primary">Colorlib</a>
+              <script>
+                document.write(new Date().getFullYear());
+              </script> All rights reserved | This template is made
+              with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
