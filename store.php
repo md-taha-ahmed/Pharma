@@ -24,7 +24,7 @@ include "includes/head.php"
         <div class="row">
           <?php
           $data = search();
-          if (!empty($data)) {
+          if ($data != "no result" and !empty($data)) {
             $num = sizeof($data);
             for ($i = 0; $i < $num; $i++) {
           ?>
@@ -68,15 +68,37 @@ include "includes/head.php"
                   ?>
                   <p class="price">₹<?php echo $data[$i]['item_price'] ?></p>
                 </div>
-            <?php
+              <?php
                 if ($i == 2) {
                   break;
                 }
               }
             }
+          } elseif (empty($data)) {
+            $data = all_products();
+            $num = sizeof($data);
+            for ($i = 0; $i < $num; $i++) {
+              ?>
+              <div class="col-sm-6 col-lg-4 text-center item mb-4">
+                <a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"> <img class="rounded mx-auto d-block" style="width:270px ; height:270px ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
+                <?php if (strlen($data[$i]['item_title']) <= 20) { ?>
+                  <h3 class="text-dark"><a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"><?php echo $data[$i]['item_title'] ?></a></h3>
+                <?php
+                } else {
+                ?>
+                  <h3 class="text-dark"><a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"><?php echo substr($data[$i]['item_title'], 0, 20) . "..." ?></a></h3>
+                <?php
+                }
+                ?>
+                <p class="price">₹<?php echo $data[$i]['item_price'] ?></p>
+              </div>
+            <?php
+              if ($i == 11) {
+                break;
+              }
+            }
           } else {
             ?>
-
             <div class="text-center col-12">
               <img class="img-fluid " style="margin-top: -90px;" src="images/1.gif">
             </div>
