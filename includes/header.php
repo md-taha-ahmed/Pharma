@@ -41,6 +41,19 @@
                     <span class="icon-shopping-bag"></span>
                     <span class="number">2</span>
                 </a>
+                <?php
+                if (!isset($_SESSION['user_id'])) {
+                    echo "<a href='login.php' class=' icons-btn d-inline-block '><span class='icon-sign-in'></span></a>";
+                } else {
+                    $check_user_id = check_user($_SESSION['user_id']);
+                    if ($check_user_id == 1) {
+                        echo "<a href='logout.php' class=' icons-btn d-inline-block '><span class='icon-sign-out'></span></a>";
+                    } else {
+                        post_redirect("logout.php");
+                    }
+                }
+                ?>
+
                 <a href="" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
             </div>
         </div>
