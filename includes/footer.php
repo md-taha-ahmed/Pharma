@@ -5,8 +5,9 @@
 
                 <div class="block-7">
                     <h3 class="footer-heading mb-4">About Us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates
-                        sed dolorum excepturi iure eaque, aut unde.</p>
+                    <p>Pharma.com, Online Medical Store, is brought to you by the Pharma & Company – one of
+                        India’s most trusted pharmacies, with over 100 years’ experience in dispensing
+                        quality medicines. </p>
                 </div>
 
             </div>
@@ -24,9 +25,12 @@
                 <div class="block-5 mb-5">
                     <h3 class="footer-heading mb-4">Contact Info</h3>
                     <ul class="list-unstyled">
-                        <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                        <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                        <li class="email">emailaddress@domain.com</li>
+                        <li class="address">NO.18, 1ST FLOOR, 3RD MAIN,
+                            MUNIYELLAPPA LAYOUT, VINAYAKANAGAR,
+                            J.P NAGAR, 5TH PHASE
+                            BANGALURU, KARNATAKA, INDIA - 560078</li>
+                        <li class="phone"><a href="tel://23923929210">+91 966 3034 110</a></li>
+                        <li class="email">md.taha.ahmed.projects@gmail.com</li>
                     </ul>
                 </div>
 
@@ -36,13 +40,11 @@
         <div class="row pt-5 mt-5 text-center">
             <div class="col-md-12">
                 <p>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     Copyright &copy;
                     <script>
                         document.write(new Date().getFullYear());
-                    </script> All rights reserved | This template is made
-                    with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </script> All rights reserved | This website was made
+                    with by <a href="https://md-taha-ahmed.github.io/Portfolio-website/" target="_blank" class="text-primary">MD TAHA AHMED</a>
                 </p>
             </div>
 
