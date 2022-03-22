@@ -80,13 +80,13 @@ include "includes/head.php"
           for ($i = 0; $i < $num; $i++) {
           ?>
             <div class="col-sm-6 col-lg-4 text-center item mb-4">
-              <a href="shop-single.php"> <img class="rounded mx-auto d-block" style="width:80% ; height:80% ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
+              <a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"> <img class="rounded mx-auto d-block" style="width:80% ; height:80% ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
               <?php if (strlen($data[$i]['item_title']) <= 20) { ?>
-                <h3 class="text-dark"><a href="shop-single.php"><?php echo $data[$i]['item_title'] ?></a></h3>
+                <h3 class="text-dark"><a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"><?php echo $data[$i]['item_title'] ?></a></h3>
               <?php
               } else {
               ?>
-                <h3 class="text-dark"><a href="shop-single.php"><?php echo substr($data[$i]['item_title'], 0, 20) . "..." ?></a></h3>
+                <h3 class="text-dark"><a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"><?php echo substr($data[$i]['item_title'], 0, 20) . "..." ?></a></h3>
               <?php
               }
               ?>
@@ -101,7 +101,7 @@ include "includes/head.php"
         </div>
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <a href="shop.php" class="btn btn-primary px-4 py-3">View All Products</a>
+            <a href="store.php" class="btn btn-primary px-4 py-3">View All Products</a>
           </div>
         </div>
       </div>
@@ -126,11 +126,11 @@ include "includes/head.php"
               ?>
                 <!--  -->
                 <div class="  text-center item mb-4">
-                  <a href="shop-single.php"> <img class="rounded mx-auto d-block" style="width:270px ; height:300px ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
+                  <a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"> <img class="rounded mx-auto d-block" style="width:270px ; height:300px ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
 
-                  <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
+                  <h3 class="text-dark"><a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>">Umcka Cold Care</a></h3>
 
-                  <p class="price">$120.00</p>
+                  <p class="price">₹<?php echo $data[$i]['item_price'] ?></p>
                 </div>
                 <!--  -->
               <?php
@@ -211,13 +211,13 @@ include "includes/head.php"
       </div>
     </div>
 
-   
+
     <?php
     include "includes/footer.php"
     ?>
   </div>
 
-  
+
 
 </body>
 
