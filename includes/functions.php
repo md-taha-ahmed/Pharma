@@ -148,7 +148,7 @@ function message()
 function search()
 {
     if (isset($_GET['search'])) {
-        $search_text = $_GET['search_text'];
+        $search_text = $_GET['search'];
         if ($search_text == "") {
             return;
         }
