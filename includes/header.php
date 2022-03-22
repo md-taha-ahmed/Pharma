@@ -18,23 +18,14 @@
             <div class="main-nav d-none d-lg-block">
                 <nav class="site-navigation text-right text-md-center" role="navigation">
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
-                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="shop.php">Store</a></li>
                         <li class="has-children">
-                            <a href="#">Dropdown</a>
+                            <a href="#">Categories</a>
                             <ul class="dropdown">
-                                <li><a href="#">Supplements</a></li>
-                                <li class="has-children">
-                                    <a href="#">Vitamins</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Supplements</a></li>
-                                        <li><a href="#">Vitamins</a></li>
-                                        <li><a href="#">Diet &amp; Nutrition</a></li>
-                                        <li><a href="#">Tea &amp; Coffee</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Diet &amp; Nutrition</a></li>
-                                <li><a href="#">Tea &amp; Coffee</a></li>
+                                <li><a href="#">Medicine</a></li>
+                                <li><a href="#">Self Care</a></li>
+                                <li><a href="#">machines</a></li>
 
                             </ul>
                         </li>
