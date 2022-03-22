@@ -160,6 +160,9 @@ function search()
         $query = "SELECT * FROM item WHERE item_cat='$cat' ORDER BY RAND()";
         $data = query($query);
         return $data;
+    } elseif (isset($_GET['store'])) {
+        $data = all_products();
+        return $data;
     }
 }
 function all_products()

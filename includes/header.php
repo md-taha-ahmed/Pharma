@@ -3,7 +3,7 @@
     <div class="search-wrap">
         <div class="container">
             <a href="#" class="search-close js-search-close"><span class="icon-close2"></span></a>
-            <form action="#" method="GET">
+            <form action="store.php" method="GET">
                 <input type="text" name="search" class="form-control" placeholder="Search keyword and hit enter...">
             </form>
         </div>
@@ -19,13 +19,13 @@
                 <nav class="site-navigation text-right text-md-center" role="navigation">
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="store.php">Store</a></li>
+                        <li><a href="store.php?store=all">Store</a></li>
                         <li class="has-children">
                             <a href="#">Categories</a>
                             <ul class="dropdown">
-                                <li><a href="#">Medicine</a></li>
-                                <li><a href="#">Self Care</a></li>
-                                <li><a href="#">machines</a></li>
+                                <li><a href="store.php?cat=medicine">Medicine</a></li>
+                                <li><a href="store.php?cat=self-care">Self Care</a></li>
+                                <li><a href="store.php?cat=medicine">machine</a></li>
 
                             </ul>
                         </li>
@@ -41,7 +41,7 @@
                     <span class="icon-shopping-bag"></span>
                     <span class="number">2</span>
                 </a>
-                <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
+                <a href="" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>
             </div>
         </div>
     </div>
