@@ -69,45 +69,35 @@ include "includes/head.php"
       <div class="container">
         <div class="row">
           <div class="title-section text-center col-12">
-            <h2 class="text-uppercase">Popular Products</h2>
+            <h2 class="text-uppercase">Products You Might Like</h2>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
-            <a href="shop-single.php"> <img src="images/product_01.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.php">Bioderma</a></h3>
-            <p class="price"><del>95.00</del> &mdash; $55.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.php"> <img src="images/product_02.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.php">Chanca Piedra</a></h3>
-            <p class="price">$70.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.php"> <img src="images/product_03.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
-            <p class="price">$120.00</p>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-
-            <a href="shop-single.php"> <img src="images/product_04.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.php">Cetyl Pure</a></h3>
-            <p class="price"><del>45.00</del> &mdash; $20.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="shop-single.php"> <img src="images/product_05.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.php">CLA Core</a></h3>
-            <p class="price">$38.00</p>
-          </div>
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <span class="tag">Sale</span>
-            <a href="shop-single.php"> <img src="images/product_06.png" alt="Image"></a>
-            <h3 class="text-dark"><a href="shop-single.php">Poo Pourri</a></h3>
-            <p class="price"><del>$89</del> &mdash; $38.00</p>
-          </div>
+          <?php
+          $data = all_products();
+          $num = sizeof($data);
+          for ($i = 0; $i < $num; $i++) {
+          ?>
+            <div class="col-sm-6 col-lg-4 text-center item mb-4">
+              <a href="shop-single.php"> <img class="rounded mx-auto d-block" style="width:80% ; height:80% ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
+              <?php if (strlen($data[$i]['item_title']) <= 20) { ?>
+                <h3 class="text-dark"><a href="shop-single.php"><?php echo $data[$i]['item_title'] ?></a></h3>
+              <?php
+              } else {
+              ?>
+                <h3 class="text-dark"><a href="shop-single.php"><?php echo substr($data[$i]['item_title'], 0, 20) . "..." ?></a></h3>
+              <?php
+              }
+              ?>
+              <p class="price">₹<?php echo $data[$i]['item_price'] ?></p>
+            </div>
+          <?php
+            if ($i == 5) {
+              break;
+            }
+          }
+          ?>
         </div>
         <div class="row mt-5">
           <div class="col-12 text-center">
@@ -128,31 +118,27 @@ include "includes/head.php"
         <div class="row">
           <div class="col-md-12 block-3 products-wrap">
             <div class="nonloop-block-3 owl-carousel">
+              <?php
+              $data = all_products_reverse();
 
-              <div class="text-center item mb-4">
-                <a href="shop-single.php"> <img src="images/product_03.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
+              $num = sizeof($data);
+              for ($i = 0; $i < $num; $i++) {
+              ?>
+                <!--  -->
+                <div class="  text-center item mb-4">
+                  <a href="shop-single.php"> <img class="rounded mx-auto d-block" style="width:270px ; height:300px ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
 
-              <div class="text-center item mb-4">
-                <a href="shop-single.php"> <img src="images/product_01.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
+                  <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
 
-              <div class="text-center item mb-4">
-                <a href="shop-single.php"> <img src="images/product_02.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
-
-              <div class="text-center item mb-4">
-                <a href="shop-single.php"> <img src="images/product_04.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.php">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
-
+                  <p class="price">$120.00</p>
+                </div>
+                <!--  -->
+              <?php
+                if ($i == 5) {
+                  break;
+                }
+              }
+              ?>
             </div>
           </div>
         </div>
@@ -173,7 +159,11 @@ include "includes/head.php"
               <div class="testimony">
                 <blockquote>
                   <img src="images/person_1.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat unde.&rdquo;</p>
+                  <p>&ldquo;PHARMA service during COVID 19 is magnificent. It gives good discounts than
+                    medical shops. The Website is very simple to choose and the service is very much
+                    proficient and prompt. Pretty satisfied with the service. Good Part is you need not
+                    spend huge bucks on Doctor's prescribed medical shops which is other big relief. Way
+                    to GO.&rdquo;</p>
                 </blockquote>
 
                 <p>&mdash; Kelly Holmes</p>
@@ -182,9 +172,10 @@ include "includes/head.php"
               <div class="testimony">
                 <blockquote>
                   <img src="images/person_2.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
+                  <p>&ldquo;As an NRI for me personally PHARMA offers a great relief in getting medicines
+                    for my family from finger tip without any hazzles all the time with very limited lead
+                    time on all orders. very happy to be a customer and surely recommend it to all those
+                    require medicines in reasonable cost and routine basis.&rdquo;</p>
                 </blockquote>
 
                 <p>&mdash; Rebecca Morando</p>
@@ -193,9 +184,10 @@ include "includes/head.php"
               <div class="testimony">
                 <blockquote>
                   <img src="images/person_3.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
+                  <p>&ldquo;Now I became customer of pharma.com. Every time I ordering the medicine on pharma.com
+                    . It is very helpful website in online shopping for healthcare products. Its delivering service is
+                    very fast, and packing also very good, if by mistake any medicine is wrong deliver then easily
+                    returns to this web-store. Its customer service is very good.&rdquo;</p>
                 </blockquote>
 
                 <p>&mdash; Lucas Gallone</p>
@@ -204,9 +196,10 @@ include "includes/head.php"
               <div class="testimony">
                 <blockquote>
                   <img src="images/person_4.jpg" alt="Image" class="img-fluid w-25 mb-4 rounded-circle">
-                  <p>&ldquo;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo omnis voluptatem consectetur quam tempore
-                    obcaecati maiores voluptate aspernatur iusto eveniet, placeat ab quod tenetur ducimus. Minus ratione sit quaerat
-                    unde.&rdquo;</p>
+                  <p>&ldquo;I would like to thanks Pharma for their brilliant Customer Service. I ordered
+                    medicines from Pharma and they delivered my medicines within 3 days. Keep it up the
+                    good work. Pharma is the best medicine app. I recommend everyone to use Pharma
+                    Website.&rdquo;</p>
                 </blockquote>
 
                 <p>&mdash; Andrew Neel</p>
@@ -225,7 +218,7 @@ include "includes/head.php"
             <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_1.jpg');">
               <div class="banner-1-inner align-self-center">
                 <h2>Pharma Products</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
+                <p>At Pharma.com, we ensure that you get high-quality life-saving medicines are delivered to you on time.
                 </p>
               </div>
             </a>
@@ -234,8 +227,7 @@ include "includes/head.php"
             <a href="#" class="banner-1 h-100 d-flex" style="background-image: url('images/bg_2.jpg');">
               <div class="banner-1-inner ml-auto  align-self-center">
                 <h2>Rated by Experts</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae ex ad minus rem odio voluptatem.
-                </p>
+                <p>Pharma.com continues a legacy of 100 years of success in the pharmaceutical industry.</p>
               </div>
             </a>
           </div>
