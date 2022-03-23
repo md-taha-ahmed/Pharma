@@ -37,7 +37,7 @@ include "includes/head.php"
             if ($data[0]['item_quantity'] > 0) {
             ?>
               <h6 style="color: rgb(58, 211, 58);">In Stock</h6>
-              <form action="product.php" method="POST">
+              <form action="product.php" method="GET">
                 <div class="mb-5">
                   <div class="input-group mb-3" style="max-width: 220px;">
 
@@ -51,7 +51,7 @@ include "includes/head.php"
             } else {
             ?>
               <small style="color: red;">Out Of Stock</small>
-              <form action="product.php" method="POST">
+              <form action="product.php" method="GET">
                 <div class="mb-5">
                   <div class="input-group mb-3" style="max-width: 220px;">
 

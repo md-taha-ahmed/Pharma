@@ -203,22 +203,22 @@ function get_user($id)
 function add_cart($item_id)
 {
     $user_id = $_SESSION['user_id'];
-    $quantity = $_POST['quantity'];
+    $quantity = $_GET['quantity'];
     if (empty($user_id)) {
-        post_redirect("login.php");
+        get_redirect("login.php");
     } else {
-        if (isset($_POST['cart'])) {
+        if (isset($_GET['cart'])) {
             if (isset($_SESSION['cart'])) {
                 $num = sizeof($_SESSION['cart']);
                 $_SESSION['cart'][$num]['user_id'] = $user_id;
                 $_SESSION['cart'][$num]['item_id'] = $item_id;
                 $_SESSION['cart'][$num]['quantity'] = $quantity;
-                post_redirect("cart.php");
+                get_redirect("cart.php");
             } else {
                 $_SESSION['cart'][0]['user_id'] = $user_id;
                 $_SESSION['cart'][0]['item_id'] = $item_id;
                 $_SESSION['cart'][0]['quantity'] = $quantity;
-                post_redirect("cart.php");
+                get_redirect("cart.php");
             }
         }
         if (isset($_SESSION['cart'])) {
