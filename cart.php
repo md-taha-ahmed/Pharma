@@ -78,7 +78,7 @@ include "includes/head.php"
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
-                    <span class="text-black">Subtotal</span>
+                    <span class="text-black"></span>
                   </div>
 
                   <div class="col-md-6 text-right">
@@ -87,27 +87,27 @@ include "includes/head.php"
                     for ($i = 0; $i < $num; $i++) {
                       if (isset($data[$i])) {
                     ?>
-                        <strong class="text-black">₹<?php echo $data[$i][0]['item_price'] ?></strong> <br>
+                        <strong class="text-black">₹<?php echo ($data[$i][0]['item_price'] * $_SESSION['cart'][$i]['quantity']) ?></strong> <br>
                     <?php
                       }
                     }
-                    $total = total_price($data);
+
                     ?>
                   </div>
 
                 </div>
                 <div class="row mb-5">
                   <div class="col-md-6">
-                    <span class="text-black">Total</span>
+                    <span class="text-black font-weight-bold">Total</span>
                   </div>
-                  <div class="col-md-6 text-right">
-                    <strong class="text-black">₹<?php echo $total ?></strong>
+                  <div class="col-md-6 text-right font-weight-bold">
+                    <strong class="text-black">₹<?php echo total_price($data); ?></strong>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location='checkout.php?order=done'">Proceed To
+                    <button class="btn btn-primary btn-lg btn-block" onclick="window.location='checkout.php'">Proceed To
                       Checkout</button>
                   </div>
                 </div>

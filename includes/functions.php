@@ -180,7 +180,7 @@ function total_price($data)
     $sum = 0;
     $num = sizeof($data);
     for ($i = 0; $i < $num; $i++) {
-        $sum += $data[$i][0]['item_price'];
+        $sum += ($data[$i][0]['item_price'] * $_SESSION['cart'][$i]['quantity']);
     }
     return $sum;
 }
@@ -312,4 +312,13 @@ function all_products_reverse()
     $query = "SELECT * FROM item ";
     $data = query($query);
     return array_reverse($data);
+}
+function delivery_fees($data)
+{
+    if (total_price($data) < 200) {
+        $num = sizeof($data);
+        return $num * 40;
+    } else {
+        return 0;
+    }
 }
