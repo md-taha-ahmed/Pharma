@@ -1,5 +1,5 @@
 <?php
-$connection = mysqli_connect("localhost", "root", "", "PharmEasy");
+$connection = mysqli_connect("localhost", "root", "", "Pharma");
 // $connection = mysqli_connect("localhost", "id18232906_pharmeasy_1", "6HR^F*s7Ouek}r-a", "id18232906_pharmeasy");
 function post_redirect($url)
 {
@@ -154,7 +154,11 @@ function search()
         }
         $query = "SELECT * FROM item WHERE item_tags LIKE '%$search_text%'";
         $data = query($query);
-        return $data;
+        if (empty($data)) {
+            return "no result";
+        } else {
+            return $data;
+        }
     } elseif (isset($_GET['cat'])) {
         $cat = $_GET['cat'];
         $query = "SELECT * FROM item WHERE item_cat='$cat' ORDER BY RAND()";
@@ -199,35 +203,22 @@ function get_user($id)
 function add_cart($item_id)
 {
     $user_id = $_SESSION['user_id'];
-    $quantity = $_GET['quantity'];
+    $quantity = $_POST['quantity'];
     if (empty($user_id)) {
-        get_redirect("login.php");
+        post_redirect("login.php");
     } else {
-        if (isset($_GET['cart'])) {
+        if (isset($_POST['cart'])) {
             if (isset($_SESSION['cart'])) {
                 $num = sizeof($_SESSION['cart']);
                 $_SESSION['cart'][$num]['user_id'] = $user_id;
                 $_SESSION['cart'][$num]['item_id'] = $item_id;
                 $_SESSION['cart'][$num]['quantity'] = $quantity;
-                get_redirect("product.php?product_id=" . $item_id);
+                post_redirect("cart.php");
             } else {
                 $_SESSION['cart'][0]['user_id'] = $user_id;
                 $_SESSION['cart'][0]['item_id'] = $item_id;
                 $_SESSION['cart'][0]['quantity'] = $quantity;
-                get_redirect("product.php?product_id=" . $item_id);
-            }
-        } elseif (isset($_GET['buy'])) {
-            if (isset($_SESSION['cart'])) {
-                $num = sizeof($_SESSION['cart']);
-                $_SESSION['cart'][$num]['user_id'] = $user_id;
-                $_SESSION['cart'][$num]['item_id'] = $item_id;
-                $_SESSION['cart'][$num]['quantity'] = $quantity;
-                get_redirect("cart.php");
-            } else {
-                $_SESSION['cart'][0]['user_id'] = $user_id;
-                $_SESSION['cart'][0]['item_id'] = $item_id;
-                $_SESSION['cart'][0]['quantity'] = $quantity;
-                get_redirect("cart.php");
+                post_redirect("cart.php");
             }
         }
         if (isset($_SESSION['cart'])) {
