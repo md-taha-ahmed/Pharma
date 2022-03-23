@@ -289,7 +289,8 @@ function add_order()
             }
         }
         unset($_SESSION['cart']);
-        get_redirect("thankyou.php");
+    } else {
+        get_redirect("index.php");
     }
 }
 function check_user($id)

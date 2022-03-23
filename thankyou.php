@@ -8,7 +8,8 @@ include "includes/head.php"
 
 
     <?php
-    include "includes/header.php"
+    include "includes/header.php";
+    add_order();
     ?>
 
     <div class="bg-light py-3">
