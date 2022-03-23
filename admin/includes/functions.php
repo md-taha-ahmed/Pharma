@@ -1,7 +1,7 @@
 <?php
 $connection = mysqli_connect("localhost", "root", "", "Pharma");
-// $connection = mysqli_connect("localhost", "id18232906_pharmeasy_1", "6HR^F*s7Ouek}r-a", "id18232906_pharmeasy");
-// query functions (start)
+// $connection = mysqli_connect("localhost", "id18666014_pharma1", "tXU!y/6D\EH_{<[6", "id18666014_pharma");
+    // query functions (start)
 function query($query)
 {
     global $connection;
@@ -31,7 +31,7 @@ function post_redirect($url)
 {
     ob_start();
     header('Location: ' . $url);
-    // header('Location: https://pharmeasy1.000webhostapp.com/admin/' . $url);
+    // header('Location: https://md-taha-ahmed.000webhostapp.com/pharma/admin/' . $url);
     ob_end_flush();
     die();
 }
@@ -41,7 +41,7 @@ function get_redirect($url)
     window.location.href = '$url'; 
     </script>";
     // echo "<script>
-    // window.location.href = 'https://pharmeasy1.000webhostapp.com/admin/" . $url . "';
+    // window.location.href = 'https://md-taha-ahmed.000webhostapp.com/pharma/admin/" . $url . "';
     // </script>";
 }
 // redirect functions (end)
