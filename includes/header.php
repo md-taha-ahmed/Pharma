@@ -40,13 +40,17 @@
                 <a href="cart.php" class="icons-btn d-inline-block bag">
                     <span class="icon-shopping-bag"></span>
                     <?php
-                    if (isset($_SESSION['cart'])) {
+                    if (!empty($_SESSION['cart'])) {
                     ?>
                         <span class="number">
 
                             <?php echo sizeof($_SESSION['cart']); ?>
 
                         </span>
+                    <?php
+                    } else {
+                    ?>
+                        <span class="number">0</span>
                     <?php
                     }
                     ?>

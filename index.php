@@ -16,7 +16,7 @@ include "includes/head.php"
               <h2 class="sub-title">Effective Medicine, New Medicine Everyday</h2>
               <h1>Welcome To Pharma</h1>
               <p>
-                <a href="#" class="btn btn-primary px-5 py-3">Shop Now</a>
+                <a href="store.php" class="btn btn-primary px-5 py-3">Shop Now</a>
               </p>
             </div>
           </div>
@@ -32,8 +32,8 @@ include "includes/head.php"
               <a href="#" class="h-100">
                 <h5>Free <br> Shipping</h5>
                 <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+                  ₹0 charge for all your orders delivery
+                  <strong>for Orders above ₹199.</strong>
                 </p>
               </a>
             </div>
@@ -43,8 +43,8 @@ include "includes/head.php"
               <a href="#" class="h-100">
                 <h5>Season <br> Sale 50% Off</h5>
                 <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+                  Up to 80% off on health products.
+
                 </p>
               </a>
             </div>
@@ -52,10 +52,9 @@ include "includes/head.php"
           <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
             <div class="banner-wrap bg-warning h-100">
               <a href="#" class="h-100">
-                <h5>Buy <br> A Gift Card</h5>
+                <h5>New <br> Products</h5>
                 <p>
-                  Amet sit amet dolor
-                  <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong>
+                 Explore more than 10,000 products.
                 </p>
               </a>
             </div>

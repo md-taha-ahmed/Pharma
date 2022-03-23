@@ -6,7 +6,7 @@ include "includes/functions.php";
 <html lang="en">
 
 <head>
-    <title>Pharma &mdash; Colorlib Template</title>
+    <title>Pharma</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
