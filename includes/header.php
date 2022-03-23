@@ -39,7 +39,17 @@
                 <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
                 <a href="cart.php" class="icons-btn d-inline-block bag">
                     <span class="icon-shopping-bag"></span>
-                    <span class="number">2</span>
+                    <?php
+                    if (isset($_SESSION['cart'])) {
+                    ?>
+                        <span class="number">
+
+                            <?php echo sizeof($_SESSION['cart']); ?>
+
+                        </span>
+                    <?php
+                    }
+                    ?>
                 </a>
                 <?php
                 if (!isset($_SESSION['user_id'])) {
