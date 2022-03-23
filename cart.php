@@ -106,7 +106,11 @@ include "includes/head.php"
                 </div>
 
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-6">
+                    <button class="btn btn-outline-primary btn-lg btn-block" onclick="window.location='store.php'">Continue Shopping</button>
+                  </div>
+                  <br> <br>
+                  <div class="col-md-6">
                     <button class="btn btn-primary btn-lg btn-block" onclick="window.location='checkout.php'">Proceed To
                       Checkout</button>
                   </div>
