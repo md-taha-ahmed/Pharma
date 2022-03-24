@@ -73,7 +73,7 @@ include "includes/head.php";
                         </ul>
                     </div>
                 </div>
-                <br>    
+                <br>
                 <button type="submit" class="btn btn-outline-primary" value="update" name="admin_update">Submit</button>
                 <button type=" submit" class="btn btn-outline-danger" value="cancel" name="admin_cancel">Cancel</button>
                 <br> <br>
@@ -167,9 +167,19 @@ include "includes/head.php";
                             <td>
                                 <button type="button" class="btn pull-left btn-outline-warning"><a style="text-decoration: none; color:black;" href="admin.php?edit=<?php echo $data[$i]['admin_id'] ?>">Edit</a></button>
                             </td>
-                            <td>
-                                <button type="button" class="btn pull-left btn-outline-danger"><a style="text-decoration: none; color:black;" href="admin.php?delete=<?php echo $data[$i]['admin_id'] ?>">Delete</a></button>
-                            </td>
+                            <?php
+                            if ($data[$i]['admin_id'] != $_SESSION['admin_id']) {
+                            ?>
+                                <td>
+                                    <button type="button" class="btn pull-left btn-outline-danger"><a style="text-decoration: none; color:black;" href="admin.php?delete=<?php echo $data[$i]['admin_id'] ?>">Delete</a></button>
+                                </td>
+                            <?php
+                            } else {
+                            ?>
+                                <td></td>
+                            <?php
+                            }
+                            ?>
                         </tr>
                     <?php  }
                     ?>
