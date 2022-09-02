@@ -54,7 +54,7 @@ include "includes/head.php"
               <a href="#" class="h-100">
                 <h5>New <br> Products</h5>
                 <p>
-                 Explore more than 10,000 products.
+                  Explore more than 10,000 products.
                 </p>
               </a>
             </div>
@@ -79,7 +79,7 @@ include "includes/head.php"
           for ($i = 0; $i < $num; $i++) {
           ?>
             <div class="col-sm-6 col-lg-4 text-center item mb-4">
-              <a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"> <img class="rounded mx-auto d-block" style="width:80% ; height:80% ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
+              <a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"> <img class="rounded mx-auto d-block" style="width:20vw ; height:40vh ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
               <?php if (strlen($data[$i]['item_title']) <= 20) { ?>
                 <h3 class="text-dark"><a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"><?php echo $data[$i]['item_title'] ?></a></h3>
               <?php
@@ -125,7 +125,7 @@ include "includes/head.php"
               ?>
                 <!--  -->
                 <div class="  text-center item mb-4">
-                  <a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"> <img class="rounded mx-auto d-block" style="width:270px ; height:300px ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
+                  <a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>"> <img class="rounded mx-auto d-block" style="width:20vw ; height:vh ;" src="images/<?php echo $data[$i]['item_image'] ?>" alt="Image"></a>
 
                   <h3 class="text-dark"><a href="product.php?product_id=<?php echo $data[$i]['item_id'] ?>">Umcka Cold Care</a></h3>
 
