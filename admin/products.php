@@ -165,14 +165,7 @@ include "includes/head.php";
                         <th scope="col">#</th>
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Brand</th>
-                        <th scope="col">Category</th>
-                        <th scope="col">Tags</th>
-                        <th scope="col">Image</th>
-                        <th scope="col">quantity</th>
-                        <th scope="col">price</th>
-                        <th scope="col">details</th>
-                        <th>
+                    
                         <th>
                             <button type="button" class="btn btn-outline-primary"><a style="text-decoration: none; color:black;" href="products.php?add=1"> &nbsp;&nbsp;Add&nbsp;&nbsp;</a></button>
                         </th>

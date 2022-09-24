@@ -73,6 +73,7 @@ function singUp()
 {
     if (isset($_POST['singUp'])) {
         $email  = trim(strtolower($_POST['email']));
+        
         $fname  = trim($_POST['Fname']);
         $lname = trim($_POST['Lname']);
         $address = trim($_POST['address']);
