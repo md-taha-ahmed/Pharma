@@ -112,6 +112,8 @@ function singUp()
 }
 function message()
 {
+    if(isset($_SESSION['message'])){
+
     if (isset($_SESSION['message'])) {
         if ($_SESSION['message'] == "signup_err_password") {
             echo "   <div class='alert alert-danger' role='alert'>
@@ -145,6 +147,7 @@ function message()
             unset($_SESSION['message']);
         }
     }
+}
 }
 function search()
 {

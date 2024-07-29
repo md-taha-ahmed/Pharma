@@ -48,6 +48,7 @@ function get_redirect($url)
 // messages function (start)
 function message()
 {
+    if(isset($_SESSION['message'])){
     if ($_SESSION['message'] == "loginErr") {
         echo "   <div class='alert alert-danger' role='alert'>
         There is no account with this email !!!
@@ -94,6 +95,7 @@ function message()
   </div>";
         unset($_SESSION['message']);
     }
+}
 }
 // messages function (end)
 // login function (start)
