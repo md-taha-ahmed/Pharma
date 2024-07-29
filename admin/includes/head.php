@@ -26,7 +26,6 @@ if (isset($_SESSION['admin_id'])) {
     <link rel="icon" href="../images/logo.png" type="image/icon type">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
