@@ -74,9 +74,9 @@ include "includes/head.php";
             </form>
 
         <?php
-        }
-        edit_user($_SESSION['id']);
-
+        }if(isset($_SESSION['id'])){
+            edit_item($_SESSION['id']);
+            }
         ?>
         <div class="table-responsive">
             <table class="table table-striped table-sm">

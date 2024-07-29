@@ -35,8 +35,9 @@ include "includes/head.php";
             </div>
         </div>
         <?php
+        if(isset($_SESSION['id'])){
         edit_item($_SESSION['id']);
-
+        }
         if (isset($_GET['edit'])) {
             $_SESSION['id'] = $_GET['edit'];
             $data = get_item($_SESSION['id']);
