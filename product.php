@@ -24,7 +24,7 @@ include "includes/head.php"
         <div class="row">
           <div class="col-md-5 mr-auto">
             <div class="border text-center">
-              <img src="doc/<?php echo $data[0]['item_image'] ?>" alt="Image" class="img-fluid p-5">
+              <img src="images/<?php echo $data[0]['item_image'] ?>" alt="Image" class="img-fluid p-5">
             </div>
           </div>
           <div class="col-md-6">

@@ -204,7 +204,9 @@ function get_user($id)
 function add_cart($item_id)
 {
     $user_id = $_SESSION['user_id'];
-    $quantity = $_GET['quantity'];
+    if(isset( $_GET['quantity'])){
+        $quantity = $_GET['quantity']; 
+    }
     if (empty($user_id)) {
         get_redirect("login.php");
     } else {
